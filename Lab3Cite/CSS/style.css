@@ -1,0 +1,161 @@
+body {
+    background-color:orange;
+}
+
+.header{
+    text-align:center;
+    height: 250px;
+    margin: 0px 50px;
+    overflow: hidden;
+}
+
+.title {
+    display: inline-block;
+    background-color: RGB(128,0,0);
+    width: 30%;
+    font-size: 250%;
+    font-weight:bold;
+    height:250px;
+    overflow:hidden;
+}
+
+.inner{
+    display:inline-block;
+    margin: 98px 0px;
+}
+
+.menu1 {
+    display: inline-block;
+    background-color: RGB(128,0,0);
+    width: 10%;
+    font-size: 170%;
+    font-style: italic;
+    height: 254px;
+    vertical-align: bottom;
+}
+
+.innerm1 {
+    margin: 158px 0px;
+    display: inline-block;
+    color:orange;
+}
+
+.omenu {
+    display: inline-block;
+    background-color: RGB(128,0,0);
+    width: 20%;
+    vertical-align: bottom;
+    font-size: 170%;
+    font-style: italic;
+    height: 127px;
+}
+
+.innerm {
+    margin: 38px 0px;
+    display: inline-block;
+}
+
+.unheader {
+    height: 200px;
+    margin: 0px 50px;
+    overflow: visible;
+    background-color:blueviolet;
+}
+
+.content{
+    display:inline-block;
+    width:20%;
+}
+
+.mid_content {
+    display: inline-block;
+    width:30%;
+}
+
+img {
+    width: 100%;    height: 200px;
+    object-fit: cover;
+}
+
+.jokes {
+    margin: 0px 50px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.joke {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    font-size: 100%;
+    margin-right: 3%;
+    background-color: #f5f5dc;
+    height: auto;
+    overflow: hidden;
+}
+
+.jokel {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    font-size: 100%;
+    background-color: #f5f5dc;
+    height: auto;
+    overflow: hidden;
+}
+
+.joke-img {
+    width:auto;
+}
+
+.joke .joke-img img,
+.jokel .joke-img img
+{
+    margin: 0px auto;   
+    width: 50%;
+    object-fit:contain;
+}
+
+
+.jokehead {
+    display: inline-block;
+    margin-bottom: 10%;
+    font-size: 200%;
+    width: 100%;
+}
+
+.joketext {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.footer {
+    background-color:grey;
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+    .footer a {
+        font-size: 1em;
+        color: black;
+        text-decoration:none;
+    }
+
+.footer img {
+    height: 1.2em;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

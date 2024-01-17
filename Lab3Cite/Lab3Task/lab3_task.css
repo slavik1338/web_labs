@@ -1,0 +1,30 @@
+.content{
+    background-color: aquamarine;
+    width: 80%;
+    margin: 5px auto;
+    display: block;
+    padding: 20px;
+}
+
+.card {
+    display: inline-block;
+    background: white;
+    margin: 20px;
+    width: 300px;
+    padding: 30px;
+}
+
+.name {
+    width: 25%;
+    display: inline-block;
+    background-color: greenyellow;
+    color: white;
+    padding: 0.2em;
+    font-weight: bold;
+}
+
+.text {
+    width: 55%;
+    display: inline-block;
+    vertical-align: middle;
+}
