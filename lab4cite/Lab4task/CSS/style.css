@@ -1,0 +1,126 @@
+h1 {
+    text-align:center;
+}
+
+.header {
+    width:100%;
+    display: grid;
+    grid-template-columns:30% 30%;
+    grid-template-rows: 40% 40%;
+    grid-gap: 10px;
+    margin-bottom:15px;
+    justify-content:space-around;
+}
+
+.block {
+    border: solid thin grey;
+    background-color:grey;
+    text-align:center;
+}
+
+.content {
+    background-color: greenyellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    justify-items: stretch;
+}
+
+.python {
+    grid-row: 1;
+    grid-column: 1;
+    border: solid thin grey;
+    background-color: white;
+    text-align: justify;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+
+    padding: 5px;
+}
+
+.javascript {
+    grid-row: 2;
+    grid-column: 1/span 3;
+    border: solid thin grey;
+    background-color: white;
+    text-align: justify;
+    margin-bottom: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.java {
+    grid-row: 1;
+    grid-column: 2;
+    border: solid thin grey;
+    background-color: white;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.C {
+    grid-row: 1;
+    grid-column: 3;
+    border: solid thin grey;
+    background-color: white;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.det {
+    font-weight:bold;
+}
+
+@media(max-width: 700px) {
+    .header {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr;
+        margin-bottom:5px;
+    }
+    .content {
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        grid-gap:0px;
+    }
+
+    .python {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+        padding: 0px;
+        margin-bottom:0px;
+        margin-right:5px;
+    }
+
+    .java {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        padding:0px;
+        margin-bottom:0px;
+    }
+
+    .C {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        padding: 0px;
+        margin-left:5px;
+    }
+
+    .javascript {
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+        padding: 0px;   
+    }
+}
