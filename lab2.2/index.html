@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор трапеции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <h3>Выберите вариант ввода:</h3>
+        <label>
+            <input type="radio" name="input-type" value="side" checked> Основание и боковая сторона
+        </label>
+        <label>
+            <input type="radio" name="input-type" value="height"> Основание и высота к основанию
+        </label>
+
+        <div id="side">
+            <p>Введите значение для стороны a: </p>
+            <input type="number" id="side-a" placeholder="Сторона a"><br>
+            <p>Введите значение для стороны b: </p>
+            <input type="number" id="side-b" placeholder="Сторона b"><br>
+            <p>Введите значение для стороны c: </p>
+            <input type="number" id="side-c" placeholder="Сторона c"><br><br><br>
+        </div>
+
+        <div id="height">
+            <p>Введите значение для стороны a: </p>
+            <input type="number" id="height-a" placeholder="Сторона a"><br>
+            <p>Введите значение для стороны b: </p>
+            <input type="number" id="height-b" placeholder="Сторона b"><br>
+            <p>Введите значение для высоты h: </p>
+            <input type="number" id="height-h" placeholder="Высота h"><br><br><br>
+        </div>
+
+        <img id="side-img" class="side-img" src="side.jpg">
+        <img id="height-img" class="height-img" src="height.jpg">
+
+        <form class="block" id="calculator">
+            <label>
+                <input type="checkbox" name="angles"> Углы 
+            </label><br>
+            <label>
+                <input type="checkbox" name="perimeter"> Периметр 
+            </label><br>
+            <label>
+                <input type="checkbox" name="area"> Площадь
+            </label><br><br>
+            
+            <div class="buttons-and-results">
+                <button type="button" onclick="calculate()">Вычислить</button>
+                <button type="button" onclick="clearValues()">Очистить</button>
+                <div id="results">
+                </div>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
